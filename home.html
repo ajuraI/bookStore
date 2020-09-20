@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link href="css/main.css" rel="stylesheet" type="text/css"/>
+        <title>Books online</title>
+    </head>
+	<body>
+		<!-- скрипты -->
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<script src="js/main.js"></script>
+		<!-- top top menu -->
+		<div class="topmenu">
+			<div class="container">
+				<div class="itembar d-flex justify-content-end">
+					<a href="#" class="topmenu-item">Войти</a>
+					<a href="#"  class="topmenu-item">Мой аккаунт</a>
+					<a href="#"  class="topmenu-item">Статус заказа</a>
+					<a href="#"  class="topmenu-item m-0">Помощь</a>
+				</div>
+			</div>
+		</div>
+		<!-- header  -->
+		<header>
+			<div class="container">
+				<div class="bar d-flex align-items-center justify-content-between">
+					<div class="logo"><img src="img/logo.png" alt=""></div>
+					<div class="search-panel d-flex">
+						<input></input>
+						<div class="search d-flex btn">
+							<div><img src="img/search-icon.png" alt=""></div>
+							<div class="searchText">Поиск</div>
+						</div>
+					</div>
+					<div class="d-flex otherBlock">
+						<div class="cart-block">
+							<div class="d-flex cart-line1">
+								<div><a href="#"><img src="img/cart.png" alt=""></a></div>
+								<div class="cart"><a href="#">Корзина</a></div>
+								<div class="itemcount d-flex align-items-end">
+									<div>(2 вещи)</div>
+								</div>
+							</div>
+							<div class="cart-line2 d-flex">
+								<div class="mr-2">$125.0</div>
+								<div class="ml-2 d-flex align-items-center"><button type="button" class="btn btn-dark">Мой счёт</button></div>
+							</div>
+						</div>
+						<div class="wish-list d-flex flex-column justify-content-center align-items-center">
+							<div><img src="img/star.png" alt=""></div>
+							<div>Избранное</div>
+							<div class="listCount">20</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- menu -->
+		<div class="menu">
+			<div class="container">
+				<div class="menuBar row">
+					<div class="item col-lg col-md-3 active">Компьютеры</div>
+					<div class="item col-lg col-md-3">Рецепты</div>
+					<div class="item col-lg col-md-3">Образование</div>
+					<div class="item col-lg col-md-3">Классика</div>
+					<div class="item col-lg col-md">Здоровье</div>
+					<div class="item col-lg col-md">Математика</div>
+					<div class="item col-lg col-md">Медицина</div>
+					<div class="item col-lg col-md">Рекомендации</div>
+					<div class="item col-lg col-md">Наука</div>
+				</div>
+			</div>
+		</div>
+		<!-- banners -->
+		<div class="banners pt-4">
+			<div class="container d-flex justify-content-center">
+				<div class="slider">
+					<div class="banner-slide">
+						<img src="img/Banner.png" alt="">
+						<div class="banner-text d-flex flex-column justify-content-center align-items-center">
+							<div class="banner-heading">В розыске</div>
+							<div class="banner-number">(Джек Ричер #17)</div>
+							<div class="banner-author">Ли Чайлд</div>
+						</div>
+					</div>
+					<div class="banner-slide">
+						<img src="img/Banner.png" alt="">
+						<div class="banner-text d-flex flex-column justify-content-center align-items-center">
+							<div class="banner-heading">В розыске</div>
+							<div class="banner-number">(Джек Ричер #17)</div>
+							<div class="banner-author">Ли Чайлд</div>
+						</div>
+					</div>
+					<div class="cirqle button-prev d-flex justify-content-center align-items-center pr-1">
+						<div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="24px">
+						   <image  x="0px" y="0px" width="16px" height="24px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAYCAQAAABZqbWHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkCAEPMSuocGZfAAAAtElEQVQoz2NgwAGEsniPMOAGgjWM/5n+iYjjku5g/M/wn+E//yqs0gJTGP5DIOsvETZmdGn+xR9TYOx/zOy/0KT5tsB0QyD/YlTpg3ilec8gSzL+F+xAkhRh47mGLM30TygPRZr7PrI0y1+hGGRpHq7nKNK/hZ2RpYU43iFLs30X0UN2GRMDYUDACiIcSYQ3iQgoooIae2ShefOTD/8SlFC4STDBYA0ZAkmOgYFgomVgQCR7AGYmkHo8a9r5AAAAAElFTkSuQmCC" /></svg></div>
+					</div>
+					<div class="cirqle button-next d-flex justify-content-center align-items-center pl-1">
+						<div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="24px"><image  x="0px" y="0px" width="16px" height="24px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAYCAQAAABZqbWHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkCAEPLTNda6NUAAAAs0lEQVQoz2NmYGBg4D3Cw/H9NAMuICLO9I/xv2ANTgX8qxj+M/xn/C/YgV0/G+svhv8QKDAFiwLBGpg0w3+G//yLMS1YjKyA4T/fFsJKDmJa08GIooT3DIYSoTymf8hKeK6JsKEriWH5i6yE+z6GEmFnlt/ISriei/Cgh4ke23dkJRzvRISYGIgHBKwg4EgC3iQQUASCmlBkMTHdRFG+5JMPqQmGYJIjItEyMPAeEcrCJQcA4keVBIbVNggAAAAASUVORK5CYII=" /></svg></div>
+					</div>
+				</div>
+				<div class="sale d-flex flex-column text-center">
+					<div class="pt-4">
+						<h1>Сделка месяца</h1>
+						<p>Человеческое лицо Больших Данных</p>
+					</div>
+					<div class="d-flex flex-column justify-content-end pb-2">
+						<span>Только сегодня скидка 45%</span>
+						<h1>$27.50</h1>
+						<div><a href="#" class="btn">Купить сейчас</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- content -->
+		<div class="container pt-4 content">
+			<div class="d-flex">
+				<div class="d-flex flex-column categories p-0">
+					<div><h1 class="m-0">Категории</h1></div>
+					<div>
+						<div class="heading all active">Все произведения</div>
+					</div>
+					<div>
+						<div class="heading">Художественная литература</div>
+						<div class="list d-flex flex-column">
+							<p>Детям</p>
+							<p>Научная литература</p>
+							<p>Фантастика</p>
+							<p>Мистика</p>
+							<p>Романы</p>
+							<p>Хорроры</p>
+							<p>Поэзия</p>
+							<p>Литература</p>
+							<p>Криминалистика</p>
+						</div>
+					</div>
+					<div>
+						<div class="heading">Документальная литература</div>
+						<div class="list d-flex flex-column">
+							<p>Комедия</p>
+							<p>Рецепты</p>
+							<p>Психология</p>
+							<p>Медицина</p>
+							<p>Искусство</p>
+							<p>Фотография</p>
+							<p>Юриспруденция</p>
+							<p>История</p>
+							<p>Бизнес</p>
+							<p>Компьютеры</p>
+						</div>
+					</div>
+					<div>
+						<div class="heading">Прочее</div>
+						<div class="list d-flex flex-column">
+							<p>Малышам</p>
+							<p>Путешествия</p>
+							<p>Наука</p>
+							<p class="lastitem">Спорт</p>
+						</div>
+					</div>
+				</div>
+				<div class="bookshelf ml-4">
+					<div class="tabs row m-0">
+						<div class="tab col-lg-2 col-md-3 activeTab">Бестселлеры</div>
+						<div class="tab col-lg-2 col-md-3">Новое</div>
+						<div class="tab col-lg-2 col-md-3">Подержанные книги</div>
+						<div class="tab col-lg-2 col-md-3">Специальное предложение</div>
+						<div class="emptyTab col-lg-4 col-md-0"></div>
+					</div>
+					<div class="content-box">
+						<div class="row">
+							<div class="col d-flex flex-column align-items-center justify-content-center">
+								<div class="book"><img src="img/books/the_hare_with_amber_eyes.png" alt=""></div>
+								<div class="name">Заяц с янтарными глазами</div>
+								<div class="cost">$50</div>
+							</div>
+							<div class="col d-flex flex-column align-items-center">
+								<div class="book"><img src="img/books/the_art_of_war.png" alt=""></div>
+								<div class="name">Искусство <br>войны</div>
+								<div class="cost">$60</div>
+							</div>
+							<div class="col d-flex flex-column align-items-center justify-content-center">
+								<div class="book"><img src="img/books/Can_love_Happen_Twice.png" alt=""></div>
+								<div class="name">Можно ли полюбить дважды?</div>
+								<div class="cost">$25</div>
+							</div>
+							<div class="col d-flex flex-column align-items-center justify-content-center">
+								<div class="book"><img src="img/books/The_immortals_of_meluha.png" alt=""></div>
+								<div class="name">Бессмертные Мелухи</div>
+								<div class="cost">$80</div>
+							</div>
+							<div class="col d-flex flex-column align-items-center justify-content-center">
+								<div class="book"><img src="img/books/life_is_what_you_make_it.png" alt=""></div>
+								<div class="name">Жизнь такая какой ты ее сделаешь</div>
+								<div class="cost">$200</div>
+							</div>
+						
+							<div class="col d-flex flex-column align-items-center justify-content-center">
+								<div class="book"><img src="img/books/the_hare_with_amber_eyes.png" alt=""></div>
+								<div class="name">Заяц с янтарными глазами</div>
+								<div class="cost">$50</div>
+							</div>
+							<div class="col d-flex flex-column align-items-center">
+								<div class="book"><img src="img/books/the_art_of_war.png" alt=""></div>
+								<div class="name">Искусство <br>войны</div>
+								<div class="cost">$60</div>
+							</div>
+							<div class="col d-flex flex-column align-items-center justify-content-center">
+								<div class="book"><img src="img/books/Can_love_Happen_Twice.png" alt=""></div>
+								<div class="name">Можно ли полюбить дважды?</div>
+								<div class="cost">$25</div>
+							</div>
+							<div class="col d-flex flex-column align-items-center justify-content-center">
+								<div class="book"><img src="img/books/The_immortals_of_meluha.png" alt=""></div>
+								<div class="name">Бессмертные Мелухи</div>
+								<div class="cost">$80</div>
+							</div>
+							<div class="col d-flex flex-column align-items-center justify-content-center">
+								<div class="book"><img src="img/books/life_is_what_you_make_it.png" alt=""></div>
+								<div class="name">Жизнь такая какой ты ее сделаешь</div>
+								<div class="cost">$200</div>
+							</div>
+						
+							<div class="col d-flex flex-column align-items-center justify-content-center">
+								<div class="book"><img src="img/books/the_hare_with_amber_eyes.png" alt=""></div>
+								<div class="name">Заяц с янтарными глазами</div>
+								<div class="cost">$50</div>
+							</div>
+							<div class="col d-flex flex-column align-items-center">
+								<div class="book"><img src="img/books/the_art_of_war.png" alt=""></div>
+								<div class="name">Искусство <br>войны</div>
+								<div class="cost">$60</div>
+							</div>
+							<div class="col d-flex flex-column align-items-center justify-content-center">
+								<div class="book"><img src="img/books/Can_love_Happen_Twice.png" alt=""></div>
+								<div class="name">Можно ли полюбить дважды?</div>
+								<div class="cost">$25</div>
+							</div>
+							<div class="col d-flex flex-column align-items-center justify-content-center">
+								<div class="book"><img src="img/books/The_immortals_of_meluha.png" alt=""></div>
+								<div class="name">Бессмертные Мелухи</div>
+								<div class="cost">$80</div>
+							</div>
+							<div class="col d-flex flex-column align-items-center justify-content-center">
+								<div class="book"><img src="img/books/life_is_what_you_make_it.png" alt=""></div>
+								<div class="name">Жизнь такая какой ты ее сделаешь</div>
+								<div class="cost">$200</div>
+							</div>
+						</div>
+						<div class="pages d-flex justify-content-end">
+							<div class="page">
+								<p class="mb-0">1</p>
+								<div class="greenborder"></div>
+							</div>
+							<div class="page">
+								<p class="mb-0">2</p>
+								<div class="greenborder"></div>
+							</div>
+							<div class="page activePage">
+								<p class="mb-0">3</p>
+								<div class="greenborder"></div>
+							</div>
+							<div class="page">
+								<p class="mb-0">4</p>
+								<div class="greenborder"></div>
+							</div>
+							<div class="page">
+								<p class="mb-0">5</p>
+								<div class="greenborder"></div>
+							</div>
+							<div class="page mr-5">
+								<p class="mb-0">6</p>
+								<div class="greenborder"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- navigation -->
+		<footer>
+			<div class="navigation">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-12 d-flex flex-column justify-content-center">
+							<div class="heading">
+								Биографии и правдивые истории
+							</div>
+							<div class="footer-list d-flex flex-column">
+								<a href="#">Основное</a>
+								<a href="#">Дневники, письма и журналы</a>
+								<a href="#">Мемуары</a>
+								<a href="#">Правдивые истории</a>
+								<a href="#">Греческие записи</a>
+								<a href="#">Социология</a>
+							</div>
+						</div>
+						<div class="col-lg-3 d-flex flex-column justify-content-center col-md-12">
+							<div class="heading">
+								Специализации и справочники
+							</div>
+							<div class="footer-list d-flex flex-column">
+								<a href="#">Бизнес</a>
+								<a href="#">Инженерные и компьютерные науки</a>
+								<a href="#">Наука и матиматика</a>
+								<a href="#">Английский язык и литература</a>
+								<a href="#">Изучение английского языка</a>
+								<a href="#">Окружающая среда</a>
+							</div>
+						</div>
+						<div class="col-lg-3 d-flex flex-column justify-content-center col-md-12">
+							<div class="heading">
+								Наука о земле
+							</div>
+							<div class="footer-list d-flex flex-column">
+								<a href="#">Наука о земле</a>
+								<a href="#">География</a>
+								<a href="#">Окружающая среда</a>
+								<a href="#">Геопланирование</a>
+								<a href="#">Изучение почвы</a>
+								<a href="#">Астрономия</a>
+							</div>
+						</div>
+						<div class="col-lg-3 d-flex flex-column justify-content-center col-md-12">
+							<div class="heading">
+								Математика
+							</div>
+							<div class="footer-list d-flex flex-column">
+								<a href="#">Алгебра</a>
+								<a href="#">Дифференциальные уравнения</a>
+								<a href="#">Дискретная математика</a>
+								<a href="#">Анализ Фурье</a>
+								<a href="#">Матанализ</a>
+								<a href="#">Статистика</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="payments">
+				<div class="container d-flex flex-column align-items-center pt-5 pb-3">
+					<div class="pb-3 text-center">We accept all major Credit Card/Debit Card/Internet Banking</div>
+					<div>
+						<img src="img/mastercard.png" alt="">
+						<img src="img/americanExpress.png" alt="">
+						<img src="img/visa.png" alt=""></div>	
+					</div>
+				</div>
+			</div>
+			<div class="copy">
+				<div class="container text-center pt-3 pb-3">
+					Conditions of Use Privacy Notice © 2012-2013, Booksonline, Inc
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
