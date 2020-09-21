@@ -1,7 +1,7 @@
 # booksStore
 Адаптивная верстка страницы по макету. 
 ### Основной функционал
-- Написанный с нуля слайдер на чистом JavaScript
+- Самописный слайдер на JavaScript
 
 ![image](https://github.com/ajuraI/bookStore/blob/master/img/2G6vtlo6iic.jpg?raw=true)
 
